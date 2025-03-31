@@ -7,16 +7,22 @@
     <title>Login-pag</title>
 </head>
 <body>
+<script src="login.js"></script>
+<form id="forms"></form>
 <div class="Container">
     <h1>Log-in</h1>
     <br>
     <br>   
     <p>Email:</p>
-    <input>
+    <input type="email" placeholder="abcdefg@gmail.com" id="email">
     <br>
     <p>Senha:</p>
-    <input>
-    <button type="submit">></button>
+    <input type="senha" placeholder="12345678" id="senha">
+    <button type="submit" id="botao" onclick="logar()" class="button">Enviar</button>
+    <br>
+    <br>
+    <button id="btnshow" onclick=usersenhas() class="btnesqueci">Esqueci minha senha</button>
+    <p id="emailsenha" class="emasen"> email: claudomiro@email.com / senha: Clau12345</p>
 </div>
 </body>
 </html>
