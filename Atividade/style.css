@@ -46,6 +46,14 @@ h1{
     border-radius: 30%;
     cursor: pointer;
 }
+.env {
+    text-decoration: none;
+    color:antiquewhite;
+}
+.esq {
+    color: antiquewhite;
+}
+
 .emasen{
     color:transparent;
     font-size: 1px;
