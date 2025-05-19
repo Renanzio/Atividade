@@ -72,7 +72,6 @@
   .div1, .div2, .div3{
     flex: 1;
     background:#2a4116;
-    padding: 20px;
     border-style: solid;
     border-color: #ffffff;
   }
