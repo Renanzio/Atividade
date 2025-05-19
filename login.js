@@ -1,11 +1,27 @@
 const { useId } = require("react")
 
 function logar() {
+    const usuarios = [
+      {
+        email : "claudomiro@email.com",
+        senha : "Clau12345",
+      },
+      {
+        email : "moderador@email.com",
+        senha : "Mod12345",
+      },
+      {
+        email : "admin@email.com",
+        senha : "Adm12345",
+      }
+    ];
+    
     var Email = document.querySelector("#email").value
     var Password = document.querySelector("#senha").value
     var btn = document.getElementById("btn")
 
-    if (Email === "claudomiro@email.com" && Password === "Clau12345") {
+    const usuarioValido = usuarios.find(u => u.email === Email && u.senha === Password);
+     if (usuarioValido) {
         alert("Redirecionando para a página principal...")
         var form = document.getElementById("forms")
         form.addEventListener("submit", function(e){
@@ -20,6 +36,7 @@ function logar() {
 })
     }
 }
+
 function usersenhas(){
     var emailsenha = document.getElementById("emailsenha")
     alert(emailsenha.textContent)
