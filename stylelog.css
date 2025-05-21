@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image:linear-gradient(90deg, rgb(26, 26, 26), rgb(148, 148, 148));
+    font-family: sans-serif;
+    color:rgb(216, 216, 216);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 100vh;
+    font-size: 30px;
+    background-image: url(img1.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 7%;
+}
+h1{
+    background-image: var(--gradient);
+    background-clip:text;
+    -webkit-background-clip:text;
+    color: rgb(219, 219, 219);
+    font-family: arial;
+    font-size: 50px;
+}
+.Container{
+    border: 4px, rgb(29, 30, 43), solid;
+    border-radius: 10%;
+    padding: 2rem;
+    padding-bottom: 13%;
+    padding-left: 7%;
+    padding-right: 7%;
+    background-color: rgba(14, 13, 19, 0.8);
+}
+.btnenv{
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 9px 13px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.env {
+    text-decoration: none;
+    color:antiquewhite;
+}
+.esq {
+    color: antiquewhite;
+}
+
+.emasen{
+    color:transparent;
+    font-size: 1px;
+}
+.btnesqueci{
+    background-color: transparent;
+    font-family: arial;
+    border:none;
+    color:antiquewhite;
+    font-size: 15px;
+    cursor: pointer;
+    text-align:start;
+}
+p{
+    text-align: left;  
+}
+.btnvolta:hover {
+    background-color: #45a049;
+}
+.btnenv:hover {
+    background-color: #45a049;
+}
+.btnesqueci:hover {
+    color: aquamarine;
+}
+.btnvolta {
+    align-self: first baseline;
+    padding: 17px;
+    font-size:20px ;
+    margin-top: 10px;
+    margin-left: -30px;
+    background-color: #04AA6D;
+    border: none;
+    border-radius: 10%;
+    cursor: pointer;
+    color: rgb(223, 223, 223);
+}
+a {
+    all:unset;
+    align-self: first baseline;
+    margin-top: 10px;
+    margin-left: -30px;
+}
+.esq {
+    text-decoration:underline; 
+}
+.avolta {
+    margin-right:20px ;
+}
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+ .btnvolta {
+    all: unset;
+}
+a {
+    all: unset;
+}
+
+ .Container {
+    margin: 0px;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(14, 13, 19, 0.9);
+    border: none;
+    border-radius: 0%;
+ }
+ body {
+    margin: 0px;
+    background-image: url(img2.jpg);   
+    height: 100vh;
+    width: 100vw;
+ }
+  .avolta {
+    width: 0px;
+    color: transparent;
+ }
+}
+@media screen and (min-width: 641px) and (max-width: 1000px) {
+    .Container {
+        padding-right: 100px;
+    }
+    input {
+        width: 300px;
+        height: 30px;
+        background-color: rgba(223, 223, 223, 0.76);
+    }
+    .avolta {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}

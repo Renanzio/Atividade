@@ -3,29 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylelog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Login-pag</title>
 </head>
 <body>
-<script src="login.js"></script>
-<form id="forms"></form>
-<div class="divbtnvolta">
-<button class="btnvolta"><a href="home.html"><i class="fas fa-home"></i></button>
-</div>
+<script src="funcoes.js"></script>
+<form id="formlog"></form>
+<a class="avolta" href="home.html"><button class="btnvolta"><i class="fas fa-home"></i></button></a>
 <div class="Container">
-    <h1><a href="#"></a>Log-in</h1>
+    <h1>Log-in</h1>
     <br>
     <br>   
-    <p><a href="#"></a>Email:</p>
-    <input type="email" placeholder="abcdefg@gmail.com" id="email"><a href="#"></a>
+    <p>Email:</p>
+    <input type="email" placeholder="abcdefg@gmail.com" id="email" required>
     <br>
-    <p><a href="#"></a>Senha:</p>
-    <input type="senha" placeholder="12345678" id="senha"><a href="#"></a>
-    <button type="submit" id="botao" onclick="logar()" class="button"><a class="env" href="#"><i class="fa fa-arrow-right"></i></a></button>
+    <p>Senha:</p>
+    <input type="senha" placeholder="12345678" id="senha" required>
+    <button type="submit" id="botao" onclick="logar()" class="btnenv"><i class="fa fa-arrow-right"></i></button>
     <br>
     <br>
-    <button id="btnshow" onclick=usersenhas() class="btnesqueci"><a class="esq" href="#">Esqueci minha senha</a></button>
+    <button id="btnshow" onclick=usersenhas() class="btnesqueci">Esqueci minha senha</button>
     <p id="emailsenha" class="emasen"> email: claudomiro@email.com / senha: Clau12345</p>
 </div>
 </body>
