@@ -12,7 +12,7 @@
     <script src="funcoes.js"></script>
         <div class="container">
             <h2>Insira os dados</h2>
-            <form action="home.html" id="formregis">
+            <form action="#" id="formregis">
                 <label for="nome">Nome: </label>
                 <input id="nome" name="nome" type="text" required>
 
@@ -25,8 +25,11 @@
                 <label for="nasc">Data de Nascimento: </label>
                 <input id="nasc" name="nasc" type="date" required >
 
-                <button type="submit" onsubmit="CriarConta()" class="btnenv"><i class="fa fa-arrow-right"></i></button>
+                <button type="submit" class="btnenv"><i class="fa fa-arrow-right"></i></button>
         </div>
     </form>
+    <script>
+    document.getElementById("formregis").addEventListener("submit", CriarConta);
+    </script>
 </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylegg.css">
+    <title>Gerenciador de Gastos</title>
+</head>
+<body>
+    <script src="funcoes.js"></script>
+    <div class="cabecalho">
+        <header class="head"><h1>Gerenciador de Gastos</h1></header>
+    </div>
+    <div class="container">
+        <h2>Insira os valores</h2>
+        <label for="gastos">Gasto:</label>
+        <input id="gastos" name="gastos" type="text" required placeholder="R$ 00,00">
+        <label for="recebidos">Recebidos:</label>
+        <input id="recebidos" name="recebidos" type="text" required placeholder="R$ 00,00">
+        <div class="botoes">
+        <button id="home" class="btnvolta" onclick="location.href='home.html'">Home</button>
+        <button id="calcular" class="btncalc" onclick="calcularSaldo()">Calcular</button>
+        </div>
+        <div class="resultado">
+            <p id="saldo"></p>
+        </div>
+    </div>
+    <div class="rodape">
+        <footer class="foot"><h3>&#9888; Site em manutenção &#9888;</h3></footer>
+    </div>
+</body>
+</html>

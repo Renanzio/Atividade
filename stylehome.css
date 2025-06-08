@@ -27,7 +27,7 @@
 
   h1, h2 {
     color: azure;
-    padding-bottom: 72px;
+    padding: 20px;
     text-align: center;
     font-family:arial;
    }
@@ -74,19 +74,23 @@
     background:#2a4116;
     border-style: solid;
     border-color: #ffffff;
+    border-width: 2px;
   }
   button {
     color:white;
     background-color: transparent;
     border: none;
+    cursor: pointer;
   }
   
   footer {
-    color: bisque;
+    background-color: rgb(177, 8, 8);
+    color: white;
     text-align: center;
-    background-color:#a30c0c ;
-    padding: 1%;
-    align-self: last baseline;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
   }
 
   @media screen and (max-width: 768px) {

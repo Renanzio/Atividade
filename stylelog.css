@@ -25,6 +25,11 @@ h1{
     font-family: arial;
     font-size: 50px;
 }
+input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 .Container{
     border: 4px, rgb(29, 30, 43), solid;
     border-radius: 10%;
