@@ -133,6 +133,7 @@ a {
     width: 100vw;
  }
   .avolta {
+    all:unset;
     width: 0px;
     color: transparent;
  }
